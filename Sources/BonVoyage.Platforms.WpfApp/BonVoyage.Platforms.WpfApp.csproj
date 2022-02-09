@@ -7,4 +7,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" Version="8.1.97"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\*ViewModel.cs">
+      <DependentUpon>$([System.String]::Copy('%(FileName)').Replace('Model', '.xaml'))</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
 </Project>
