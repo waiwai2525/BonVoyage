@@ -2,6 +2,6 @@
 
 namespace BonVoyage.Platforms.WpfApp.Views;
 
-public class MainWindowViewModel : BindableBase
+public class MainWindowViewModel : ViewModelBase
 {
 }
